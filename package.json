@@ -5,12 +5,15 @@
   "license": "MIT",
   "scripts": {
     "start": "node --exec babel-node app.js",
-    "dev":"nodemon --exec babel-node app.js"
+    "dev": "nodemon --exec babel-node app.js",
+    "testhtml": "npx newman run $npm_config_pmcollection -d $npm_config_csvfile -r htmlextra --reporter-htmlextra-export ./results/RESULTS_OF_SITES.html"
   },
   "dependencies": {
     "csvtojson": "^2.0.10",
     "express": "^4.17.1",
-    "fs-extra": "^9.1.0"
+    "fs-extra": "^9.1.0",
+    "newman": "^5.2.2",
+    "newman-reporter-htmlextra": "^1.20.3"
   },
   "devDependencies": {
     "@babel/core": "^7.13.8",
