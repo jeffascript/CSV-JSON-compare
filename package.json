@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node --exec babel-node app.js",
     "dev": "nodemon --exec babel-node app.js",
+    "onefile": "nodemon --exec babel-node \"$npm_config_page\"",
     "testhtml": "npx newman run $npm_config_pmcollection -d $npm_config_csvfile -r htmlextra --reporter-htmlextra-export ./results/RESULTS_OF_SITES.html"
   },
   "dependencies": {
