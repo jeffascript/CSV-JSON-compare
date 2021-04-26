@@ -31,7 +31,7 @@ const printCSV = async (inputCSV, outputCSV, jsonFile) => {
     .then(jsonedCSV => {
       const jsonEdited = jsonedCSV.map(b => {
         jsonFile.forEach(bjson => {
-          if (bjson.id !== b.BuildingGuid) return [];
+          if (bjson.id !== b.BuildingGuid) return;
           const [long, lat] = bjson.coordinates;
           b.Longitude = long;
           b.Latitude = lat;
