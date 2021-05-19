@@ -4,7 +4,7 @@ results.csv
 new.json
 
 
-jsonData/*.json
+jsonData
 
 mergeCsvWithGeo/*.csv
 
@@ -12,3 +12,5 @@ mergeCsvWithGeoSites/*.csv
 
 
 newmanWorkSpace
+
+sites.csv
