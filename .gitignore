@@ -4,7 +4,7 @@ results.csv
 new.json
 
 
-jsonData
+jsonData/*.json
 
 mergeCsvWithGeo/*.csv
 
