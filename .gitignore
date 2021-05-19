@@ -2,3 +2,10 @@ node_modules
 
 results.csv
 new.json
+
+
+jsonData/*.json
+
+mergeCsvWithGeo/*.csv
+
+mergeCsvWithGeoSites/*.csv
